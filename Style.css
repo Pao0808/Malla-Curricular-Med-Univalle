@@ -1,0 +1,57 @@
+body {
+  background: #fff7fc;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 20px;
+  color: #5a2d82;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.semestre {
+  background: #f3e5f5;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px #ccc;
+}
+
+.semestre h2 {
+  background: #ce93d8;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.curso {
+  background: #fce4ec;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.curso.tachado {
+  background: #d1c4e9;
+  text-decoration: line-through;
+  color: #888;
+}
+
+.curso.bloqueado {
+  background: #f8bbd0;
+  opacity: 0.5;
+  cursor: not-allowed;
+}

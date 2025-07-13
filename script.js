@@ -164,3 +164,14 @@ function aplicarGuardado() {
 }
 
 renderMalla();
+let ocultando = false;
+
+function alternarOcultos() {
+  ocultando = !ocultando;
+  document.getElementById("malla").classList.toggle("ocultar", ocultando);
+
+  const boton = document.getElementById("botonOcultar");
+  boton.textContent = ocultando
+    ? "👁️ Mostrar cursos aprobados"
+    : "👻 Ocultar cursos aprobados";
+}

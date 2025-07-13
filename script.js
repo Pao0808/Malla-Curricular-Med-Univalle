@@ -23,9 +23,9 @@ const cursos = [
     semestre: "Tercer semestre",
     materias: [
       { id: "bioquimica2", nombre: "🧪 Bioquímica II", requiere: ["bioquimica1"] },
-      { id: "fisiologia1", nombre: "🫀 Fisiología I", requiere: ["anatomia1"] },
+      { id: "fisiologia1", nombre: "🫀 Fisiología I", requiere: ["anatomia2"] },
       { id: "patologia1", nombre: "🧫 Patología I", requiere: ["anatomia2", "histologia2"] },
-      { id: "biofisica", nombre: "📡 Biofísica", requiere: ["anatomia1"] },
+      { id: "biofisica", nombre: "📡 Biofísica", requiere: ["anatomia2"] },
       { id: "ingles2", nombre: "📘 Inglés Técnico II", requiere: ["ingles1"] },
       { id: "microbio1", nombre: "🧫 Microbiología I" }
     ]

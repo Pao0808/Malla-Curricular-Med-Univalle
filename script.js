@@ -121,3 +121,18 @@ malla.addEventListener("click", e => {
 });
 
 renderMalla();
+function marcarTodo() {
+  document.querySelectorAll(".curso").forEach(el => {
+    if (!el.classList.contains("bloqueado")) {
+      el.classList.add("tachado");
+    }
+  });
+  actualizarEstado();
+}
+
+function reiniciarMalla() {
+  document.querySelectorAll(".curso").forEach(el => {
+    el.classList.remove("tachado");
+  });
+  actualizarEstado();
+}

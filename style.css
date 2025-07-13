@@ -101,3 +101,6 @@ h1 {
 .alerta.mostrar {
   opacity: 1;
 }
+.ocultar .curso.tachado {
+  display: none;
+}

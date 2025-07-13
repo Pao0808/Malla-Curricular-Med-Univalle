@@ -55,3 +55,27 @@ h1 {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+.botones {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.botones button {
+  background: linear-gradient(135deg, #e1bee7, #f8bbd0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4a004a;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.botones button:hover {
+  background: #f3e5f5;
+  transform: scale(1.05);
+}

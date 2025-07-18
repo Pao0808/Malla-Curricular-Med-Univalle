@@ -1,37 +1,47 @@
 :root {
-  --bg-color: #fff8fb;
-  --text-color: #4a4a4a;
-  --accent-color: #d8a7d7;   /* Lila pastel */
-  --highlight-color: #f9c5d1; /* Rosado pastel */
-  --font: 'Segoe UI', sans-serif;
+  --rosa-claro: #fce4ec;
+  --rosa-pastel: #f8bbd0;
+  --lila-pastel: #e1bee7;
+  --texto: #4b4b4b;
+  --titulo: #ad1457;
+  --fondo: #fff0f5;
+  --borde: #f3cce8;
+  --fuente: 'Inter', 'Segoe UI', sans-serif;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: var(--font);
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: var(--fuente);
   margin: 0;
   padding: 2rem;
-  line-height: 1.6;
 }
 
 #contenedor {
-  max-width: 720px;
-  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  max-width: 800px;
+  margin: auto;
 }
 
 section {
-  margin-bottom: 2rem;
-  border-left: 4px solid var(--accent-color);
-  padding-left: 1rem;
-  background: #ffffffcc;
-  border-radius: 12px;
+  background-color: #fff;
+  border: 2px solid var(--borde);
+  border-left: 6px solid var(--lila-pastel);
+  border-radius: 16px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 4px 8px rgba(240, 185, 210, 0.2);
+  transition: transform 0.2s ease;
+}
+
+section:hover {
+  transform: translateY(-4px);
 }
 
 h2 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: var(--accent-color);
+  color: var(--titulo);
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
 }
 
 ul {
@@ -41,7 +51,19 @@ ul {
 }
 
 li {
-  padding: 8px 0;
-  border-bottom: 1px solid var(--highlight-color);
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #f7d9ea;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li::before {
+  content: "🎀";
+  margin-right: 0.6rem;
   font-size: 1rem;
 }
